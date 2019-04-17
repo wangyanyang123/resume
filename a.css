@@ -13,7 +13,12 @@ hr{
     border: none;
     border-top: 1px solid #DEDEDE;
 }
-
+ol,ul{
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+}
 .clearfix::after{
     content: '';
     display: block;
@@ -41,6 +46,7 @@ hr{
     top: 0;
     left: 0;
     width: 100%;
+ 
 }
 .top-nav-bar nav{
     float: right;
@@ -79,7 +85,7 @@ hr{
 
 .banner{
     height: 515px;
-    background-image: url(./image/rs-cover.jpg);
+    background-image: url(./rs-cover.jpg);
     background-position: center center;
     background-size: cover;
 }
@@ -100,6 +106,8 @@ hr{
     margin-right: auto;
     background-color: #ffffff;
     border: none;
+    margin-top: -350px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.28);
 }
 
 .userCard .welcome{
@@ -140,6 +148,7 @@ hr{
 }
 .userCard .text>h1{
     margin-bottom: 6px;
+    font-weight: bold;
 }
 .userCard .text hr{
     margin: 20px 0px;
@@ -177,4 +186,135 @@ width: 30px;
 height: 30px;
 fill: white;
 vertical-align: top;
+}
+body > main .downloadResume{
+  font-size: 16px;
+  line-height: 16px;
+  padding: 21px 55px;
+  display: inline-block;
+  font-weight: bold;
+  border: 1px solid #CDCFD1;
+  background: #EFEFEF;
+  border-radius: 2%;
+  color: #3D4451;
+  margin: 32px 0px;
+  transition: box-shadow 0.5s;
+}
+body > main .downloadResume:hover{
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.49);
+}
+.selfIntroduction{
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: "KaiTi";
+    font-size: 18px;
+    line-height: 1.8;
+}
+section.skills,
+section.portfolio{
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+   margin-top: 60px;
+}
+section.skills > h2,
+section.portfolio>h2{
+    text-align: center;
+    color: #3d4451;
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+section.skills  h3{
+    font-size: 14px;
+    line-height: 1.1;
+    padding-right: 40px;
+    margin-bottom: 6px;
+}
+section.skills > ol{
+    background:  white;
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    padding: 42px 50px 10px;
+}
+section.skills .porgressBar{
+    height: 5px;
+    border-radius: 2px;
+    background: #fae1e1;
+}
+section.skills .porgressBar .porgress{
+    background: #e6686a;
+    height: 100%;
+    width: 70%;
+    border-radius: 2px;
+}
+section.skills > ol > li{
+    float: left;
+    width: 48%;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+
+}
+section.skills > ol > li:nth-child(even){
+    float: right;
+}
+section.portfolio>nav>ol{
+    display: inline-block;
+    vertical-align: top;
+}
+section.portfolio>nav{
+    text-align: center;
+    margin-top: 8px;
+    display: inline-block;
+    vertical-align: top;
+}
+section.portfolio>nav>ol>li{
+    float: left;
+    cursor: pointer;
+    margin-left: 40px;
+}
+section.portfolio>nav>ol>li:nth-child(1){
+    margin-left: 0;
+}
+section.portfolio>nav .bar{
+
+ height: 5px;
+ background: white;
+ margin-top:10px;
+ border-radius: 2px;
+}
+section.portfolio>nav .bar-inner{
+    background: #e6686a;
+    height: 100%;
+    margin-bottom: 100px;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+section.portfolio{
+    text-align: center;
+}
+section.portfolio>nav .bar.state-1 .bar-inner{
+     margin-left: 0px;
+     width: 30px;
+}
+section.portfolio>nav .bar.state-2 .bar-inner{
+    margin-left: 65px;
+    width: 50px;
+}
+section.portfolio>nav .bar.state-3 .bar-inner{
+    margin-left: 140px;
+    width: 90px;
+}
+section.portfolio .jobs{
+     position: relative;
+     margin-top: 30px;
+     margin-bottom: 100px;
+}
+section.portfolio .jobs .big,
+section.portfolio .jobs .small{
+   position: absolute;
 }
