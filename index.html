@@ -1,1 +1,298 @@
-���
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>王彦阳的个人简历</title>
+    <link rel="stylesheet" href="./a.css">
+    <link rel="stylesheet" href="./loading.css">
+    <script src="//at.alicdn.com/t/font_1137293_v2l28r7f86.js"></script>
+    <style type="text/css">
+        .icon {
+           width: 1em; height: 1em;
+           vertical-align: -0.15em;
+           fill: currentColor;
+           overflow: hidden;
+        }
+        .ssWelcome{
+            display: none;
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: #888;
+            z-index: 1;
+            justify-content: center;
+            align-items: center;
+        }
+        .ssWelcome.active{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div id="ssWelcome" class="ssWelcome active">
+    <div class="loading"></div>
+    </div>
+    <div id = "topNavBar" class="top-nav-bar">
+        <div class="top-nav-bar-inner clearfix">
+        <a class="logo" href="#" alt="logo" style="float: left" >
+        <span class="rs">RS</span><span class="card">card</span>
+        </a>
+    <nav class="menu">
+        <ul class="clearfix">
+            <li><a href="#siteAbout">关于</a></li>
+            <li><a href="#siteSkills">技能</a></li>
+            <li>
+                <a href="#siteWorks">作品</a>
+                <ul class="submenu">
+                    <li>作品1</li>
+                    <li>作品2</li>
+                    <li>作品3</li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">博客</a>
+                <ul class="submenu">
+                    <li>博客1</li>
+                    <li>博客2</li>
+                    <li>博客3</li>
+                </ul>
+            </li>
+            <li><a href="#">日历</a></li>
+            <li><a href="#">联系方式</a></li>
+            <li><a href="#">其他</a></li>
+           </ul>
+    </nav>
+    </div>
+    </div>
+    <div class="banner">
+    <div class="mask"></div>
+    </div>
+    <main>
+        <div data-x class="userCard" id="siteAbout">
+        <div class="pictureAndtext clearfix">
+             <div class="picture">
+                  <img src="./image/avatar.jpg" width="299" height="347" alt="头像"/>
+              </div>
+        <div class="text">
+        <span class="welcome">Hello
+            <span class="triangle"></span>
+        </span>
+        <h1>王彦阳</h1>
+        <p>前端开发工程师</p>
+        <hr>
+        <dl>
+            <dt>年龄</dt>
+            <dd>24</dd>
+            <dt>所在城市</dt>
+            <dd>苏州</dd>
+            <dt>电子邮件</dt>
+            <dd>1157557184@qq.com</dd>
+            <dt>手机</dt>
+            <dd>18168182735</dd>
+        </dl>
+        </div>
+        </div>
+        <footer class="media">
+            <a href=""> 
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-zhihu1"></use>
+                </svg>
+            </a>
+            <a href="">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-Path"></use>
+                </svg>
+            </a>
+            <a href="">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            </a>
+            <a href="">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-weibo"></use>
+                </svg>
+            </a>
+            <a href="">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-weibiaoti-"></use>
+                </svg>
+            </a>
+        </footer>
+        </div>
+        <p style="text-align: center">
+        <a  class="downloadResume" href="王彦阳_181-6818-2735.pdf" target="_blank" download>下载 PDF 简历</a>
+        </p>
+        <p class="selfIntroduction">
+            熟练使用Vue框架；<br>
+            熟练掌握html5、css3、js、jquery；<br>
+            具有良好的沟通协调能力，责任心强，重视团队合作;
+            
+            
+        </p>
+    </main>
+    <section data-x id="siteSkills" class="skills">
+        <h2>技能</h2>
+        <ol class="clearfix">
+            <li>
+                <h3>HTML &amp; css 3</h3>
+                <div class="porgressBar">
+                    <div class="porgress" style="width: 50%"></div>
+                </div>
+           </li>
+           <li>
+                <h3>JavaScript</h3>
+                <div class="porgressBar">
+                            <div class="porgress" style="width: 60%"></div>
+                 </div>
+            </li>
+            <li>
+                <h3>jQuery</h3>
+                <div class="porgressBar">
+                 <div class="porgress"></div>
+                </div>
+            </li>
+            <li>
+                <h3>Vue.js</h3>
+                <div class="porgressBar">
+                <div class="porgress" style="width: 80%"></div>
+                 </div>
+            </li>
+             <li>
+                <h3>React.js</h3>
+                <div class="porgressBar">
+                <div class="porgress" style="width: 90%"></div>
+                 </div>
+                </li>
+                 <li>
+                <h3>Node.js</h3>
+                <div class="porgressBar">
+                 <div class="porgress" style="width: 100%"></div>
+            </div>
+             </li>       
+        </ol>   
+    </section>
+    <section data-x class="portfolio" id="siteWorks">
+        <h2>作品集</h2>
+        <nav>
+            <ol class="clearfix">
+                <li id="portfolio1">所有</li>
+                <li id="portfolio2">框架</li>
+                <li id="portfolio3">原生 JS&amp;css</li>
+            </ol>
+            <div id="portfolioBar" class="bar state-1">
+                <div class="bar-inner"></div>
+            </div>
+            </nav>
+               <script>
+                 portfolio1.onclick= function(){
+                     portfolioBar.className = 'bar state-1'
+                 }
+                 portfolio2.onclick= function(){
+                     portfolioBar.className = 'bar state-2'
+                 }
+                 portfolio3.onclick= function(){
+                     portfolioBar.className = 'bar state-3'
+                 }
+               </script>
+
+        <div class="jobs" style="height: 597px">
+            <div class="big" style="top:0;left:0;">
+                <img src="./image/1.jpg" alt="作品1">
+            </div>
+            <div class="small" style="top:0;left:645px;" >
+                <img src="./image/2.jpg" alt="作品2">
+            </div>
+            <div class="small" style="top:312px;left:645px;">
+                <img src="./image/3.jpg" alt="作品3">
+            </div>
+
+        </div>
+    </section>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.4.0/Tween.min.js"></script>
+    <script>
+        setTimeout(function(){
+        ssWelcome.classList.remove('active')
+        },1500)
+
+        let specialTags = document.querySelectorAll('[data-x]')
+        for(let i = 0; i<specialTags.length; i++){
+            specialTags[i].classList.add('offset')
+        }
+
+        setTimeout(function(){
+            findClosest()
+        },1500)
+
+        window.onscroll = function(xxxxx){
+            if(window.scrollY > 0){
+                topNavBar.classList.add('sticky')
+            }else{
+                topNavBar.classList.remove('sticky')
+            }
+            findClosest()
+        }
+
+        function findClosest(){
+            let specialTags = document.querySelectorAll('[data-x]')
+            let minIndex = 0
+            for(let i = 0; i<specialTags.length; i ++){
+                if (Math.abs(specialTags[i].offsetTop - window.scrollY) < Math.abs(specialTags[minIndex].offsetTop - window.scrollY)){
+                minIndex = i
+            }
+            }
+            specialTags[minIndex].classList.remove('offset')
+            let id = specialTags[minIndex].id
+            let  a = document.querySelector('a[href="#' + id + '"]')
+            let li = a.parentNode
+            let borthersAndMe = li.parentNode.children
+            for(let i = 0; i< borthersAndMe.length; i ++){
+                borthersAndMe[i].classList.remove('highlight')
+            }
+            li.classList.add('highlight')
+        }
+
+        let liTags = document.querySelectorAll('nav.menu > ul > li')
+
+        function animate(time) {
+                    requestAnimationFrame(animate);
+                    TWEEN.update(time);
+                }
+                requestAnimationFrame(animate);
+       
+        for(let i=0; i<liTags.length; i ++ ){
+            liTags[i].onmouseenter = function(x){
+              x.currentTarget.classList.add('active')
+            }
+            liTags[i].onmouseleave = function(x){
+                x.currentTarget.classList.remove('active')
+            }
+        }
+        let aTags = document.querySelectorAll('nav.menu > ul > li > a')
+        for(let i=0; i<aTags.length; i++){
+            aTags[i].onclick = function(x){
+                x.preventDefault()
+                let a = x.currentTarget
+                let href = a.getAttribute('href')
+                let element = document.querySelector(href)
+                let top = element.offsetTop
+                let currentTop = window.scrollY
+                let targetTop = top - 80
+                let s = targetTop - currentTop
+                var t = Math.abs((s/100) * 200)
+                if (t>700){t = 700}
+                const coords = { y: currentTop };
+                const tween = new TWEEN.Tween(coords)
+                    .to({ y: targetTop }, t )
+                    .easing(TWEEN.Easing.Quadratic.InOut)
+                    .onUpdate(() => {
+                       window.scrollTo(0,coords.y)
+                    })
+                    .start();
+               
+        }
+        }
+    </script>
+</body>
+</html>

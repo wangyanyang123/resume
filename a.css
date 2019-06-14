@@ -31,6 +31,7 @@ h1,h2,h3,h4,h5,h6{
     float: left;
     margin-left: 17px;
     margin-right: 17px;
+    position: relative;
 }
 
 .top-nav-bar nav>ul{
@@ -46,14 +47,23 @@ h1,h2,h3,h4,h5,h6{
     top: 0;
     left: 0;
     width: 100%;
- 
+    transition: all 0.5s;
+    color: #b7b7b7
+}
+.top-nav-bar.sticky{
+    background: white;
+    padding: 10px 0;
+    z-index: 1;
+    box-shadow: 0 0 20px rgba(0,0,0,0.25);
+    opacity: 0.95;
+    color: #3d4451;
 }
 .top-nav-bar nav{
     float: right;
 }
 
 .top-nav-bar nav>ul>li>a{
-    color: #b7b7b7;
+    color: inherit;
     font-weight: bold;
     font-size: 14px;
     border-top: 3px solid transparent;
@@ -62,12 +72,54 @@ h1,h2,h3,h4,h5,h6{
     padding-bottom: 6px;
     display: block;
     margin-top: 3px;
+    position: relative;
 }
 
-.top-nav-bar nav>ul>li>a:hover{
-    border-bottom: 3px solid #e06567;
+.top-nav-bar nav>ul>li.active > a::after,
+.top-nav-bar nav>ul>li.highlight > a::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #e06567;
+    height: 3px;
+    animation: menuSlide 0.3s;
 }
-
+@keyframes menuSlide{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+.top-nav-bar .submenu{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: white;
+    color: #3d4451;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.top-nav-bar li.active> .submenu{
+    display: block;
+    animation: submenuSlide .3s;
+}
+@keyframes submenuSlide{
+    0%{
+        margin-right: 100%;
+    }
+    100%{
+        margin-right: 0%;
+    }
+}
+.top-nav-bar .submenu > li{
+    white-space: nowrap;
+    padding: 5px 10px;
+}
 .top-nav-bar .logo{
     font-size: 24px;
     font-family: "Yu Gothic";
@@ -85,7 +137,7 @@ h1,h2,h3,h4,h5,h6{
 
 .banner{
     height: 515px;
-    background-image: url(./rs-cover.jpg);
+    background-image: url(./image/rs-cover.jpg);
     background-position: center center;
     background-size: cover;
 }
@@ -245,12 +297,18 @@ section.skills .porgressBar{
     height: 5px;
     border-radius: 2px;
     background: #fae1e1;
+    overflow: hidden;
 }
 section.skills .porgressBar .porgress{
     background: #e6686a;
     height: 100%;
     width: 70%;
     border-radius: 2px;
+    transform: translateX(0);
+    transition: all 1s;
+}
+section.skills.offset .porgress{
+    transform: translateX(-100%);
 }
 section.skills > ol > li{
     float: left;
@@ -317,4 +375,12 @@ section.portfolio .jobs{
 section.portfolio .jobs .big,
 section.portfolio .jobs .small{
    position: absolute;
+}
+
+[data-x].offset{
+    transform: translateY(200px);
+}
+[data-x]{
+    transform: translateY(0);
+    transition: all 0.5s;
 }
